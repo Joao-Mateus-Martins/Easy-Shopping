@@ -1,13 +1,44 @@
-<h1><h1>Site basico de responsividade feito com base nas aulas <a href="https://rodolfomori.com.br/">DevClub 📖</a></h1></h1>
+# 🛍️ Easy Shopping
 
-<h2>Linguagens utilizadas 💡</h2>
+A responsive e-commerce presentation site, built while following the [DevClub](https://rodolfomori.com.br/) course, with a focus on a modern, intuitive interface adapted for different devices.
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![Css](https://img.shields.io/badge/CSS-663399.svg?style=for-the-badge&logo=CSS&logoColor=white)
+## 🌐 Live Demo
 
-<img width="1912" height="906" alt="Captura de tela 2025-07-28 205850" src="https://github.com/user-attachments/assets/13bae869-c766-4944-bcb3-4c4534d1f1a3" />
-<img width="522" height="684" alt="Captura de tela 2025-07-28 205830" src="https://github.com/user-attachments/assets/05974c17-619b-47c5-9b4a-4f1757155519" />
+[View Live Demo](https://easy-shopping-nu.vercel.app/)
 
- <h2>⬇️Abra o site na pagina aqui </h2> 
- 
-<a href=https://easy-shopping-nu.vercel.app/>![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white)</a>
+## ✨ Features
+
+- 🛒 E-commerce style product showcase layout
+- 📱 Fully responsive design (desktop, tablet, mobile)
+- 🎨 Modern, intuitive interface
+
+## 🛠️ Technologies
+
+- HTML5
+- CSS3
+- Vercel (Deploy)
+
+## 📂 Project Structure
+
+```
+Easy-Shopping/
+├── img/
+├── index.html
+├── stiles.css
+└── README.md
+```
+
+## 🚀 Getting Started
+
+```bash
+git clone https://github.com/Joao-Mateus-Martins/Easy-Shopping.git
+cd Easy-Shopping
+```
+
+Then open `index.html` directly in your browser.
+
+## 👨‍💻 Developer
+
+**João Mateus** — Web Developer
+
+- GitHub: [@Joao-Mateus-Martins](https://github.com/Joao-Mateus-Martins)
