@@ -1,0 +1,59 @@
+/* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .main-nav { display: none; }
+  .search-form { width: 180px; }
+  .search-form:focus-within { width: 200px; }
+  .category-grid { grid-template-columns: repeat(3, 1fr); }
+  .product-grid { grid-template-columns: repeat(3, 1fr); }
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero-art { order: -1; max-width: 420px; margin: 0 auto; }
+  .promo-inner { grid-template-columns: 1fr; text-align: left; }
+  .promo-image { width: 100%; max-width: 340px; }
+}
+
+@media (max-width: 768px) {
+  :root { --header-height: 64px; }
+  .menu-toggle { display: flex; }
+  .search-form { display: none; }
+  .hero { padding: 32px 0 24px; }
+  .hero-copy h1 { max-width: none; }
+  .hero-actions { flex-direction: column; }
+  .hero-actions .btn { width: 100%; }
+  .hero-stats { gap: 20px; }
+  .floating-card--price { top: 4%; right: 0; }
+  .floating-card--cart { display: none; }
+  .category-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+  .category-card { padding: 14px 8px; }
+  .category-card span { font-size: 0.75rem; }
+  .products-toolbar { flex-direction: column; align-items: stretch; }
+  .product-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .promo-inner { padding: 32px 24px; }
+  .benefits-grid { grid-template-columns: 1fr; gap: 24px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 28px 20px; }
+  .newsletter-inner { flex-direction: column; align-items: stretch; text-align: center; }
+  .newsletter-form { justify-content: center; }
+  .newsletter-form input { flex: 1; min-width: 0; }
+  .cart-drawer { width: 100vw; }
+}
+
+@media (max-width: 480px) {
+  .header-inner { padding: 0 16px; gap: 12px; }
+  .section-inner { padding: 0 16px; }
+  .hero-inner { padding: 0 16px; }
+  .logo span { display: none; }
+  .category-grid { grid-template-columns: repeat(2, 1fr); }
+  .product-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .product-info { padding: 10px; }
+  .product-name { font-size: 0.82rem; min-height: 2.4em; }
+  .product-price { font-size: 1rem; }
+  .add-to-cart-btn { font-size: 0.78rem; padding: 9px; }
+  .add-to-cart-btn span { display: none; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .promo-copy h2 { max-width: none; }
+}
+
+
