@@ -1,28 +1,289 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="stiles.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Shopping</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Easy Shopping — Sua loja online de confiança</title>
+  <meta name="description" content="Easy Shopping: eletrônicos, moda, casa e acessórios com frete rápido, pagamento seguro e os melhores preços. Compre com facilidade.">
+  <meta name="theme-color" content="#2847AC">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Easy Shopping — Sua loja online de confiança">
+  <meta property="og:description" content="Eletrônicos, moda, casa e acessórios com frete rápido e pagamento seguro.">
+  <meta property="og:site_name" content="Easy Shopping">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%232847AC'/%3E%3Cpath d='M28 38h44l-4 30a6 6 0 0 1-6 5H38a6 6 0 0 1-6-5l-4-30z' fill='none' stroke='white' stroke-width='6' stroke-linejoin='round'/%3E%3Cpath d='M38 38v-6a12 12 0 0 1 24 0v6' fill='none' stroke='white' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="Products.css">
+  <link rel="stylesheet" href="Header.css">
+  <link rel="stylesheet" href="Responsive.css">
+
 </head>
 <body>
-    
-    <div class="text">
-        <h1>Easy Shopping Via Mobile</h1>
 
-    <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam incidunt voluptates est atque, deserunt provident amet, consequatur ducimus itaque assumenda ipsum, blanditiis quibusdam. Aspernatur, deleniti ex commodi ullam alias cum!</p>
-    <button>Get Started</button>
+  <a class="skip-link" href="#main-content">Pular para o conteúdo</a>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <a href="#main-content" class="logo" aria-label="Easy Shopping — página inicial">
+        <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="100" height="100" rx="22" fill="#2847AC"/>
+          <path d="M28 38h44l-4 30a6 6 0 0 1-6 5H38a6 6 0 0 1-6-5l-4-30z" stroke="white" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M38 38v-6a12 12 0 0 1 24 0v6" stroke="white" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <span>Easy<strong>Shopping</strong></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navegação principal">
+        <a href="#produtos">Produtos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#beneficios">Sobre a loja</a>
+      </nav>
+
+      <div class="header-actions">
+        <form class="search-form" role="search" id="searchForm">
+          <label for="searchInput" class="visually-hidden">Pesquisar produtos</label>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <input type="search" id="searchInput" placeholder="Buscar produtos…" autocomplete="off">
+        </form>
+
+        <button class="icon-btn" id="cartToggle" aria-label="Abrir carrinho" aria-controls="cartDrawer" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21.5 8H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="21" r="1.4" fill="currentColor"/><circle cx="18" cy="21" r="1.4" fill="currentColor"/></svg>
+          <span class="cart-badge" id="cartBadge" hidden>0</span>
+        </button>
+      </div>
     </div>
-        
-    <header>
-        <a href="">Home</a>
-        <a href=""><span>Work</span></a>
-        <a href="">About</a>
-        <a href="">contact</a>
-    </header>
-    
-        <img src="img/Illustration-3-3.png" alt="">
 
+    <nav class="mobile-nav" id="mobileNav" aria-label="Navegação móvel">
+      <a href="#produtos">Produtos</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#beneficios">Sobre a loja</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-eyebrow">Easy Shopping via mobile</p>
+          <h1>Compre com facilidade, receba com confiança</h1>
+          <p class="hero-text">Eletrônicos, moda e itens para casa selecionados com preços justos. Adicione ao carrinho em segundos e acompanhe tudo sem complicação — de qualquer lugar, em qualquer tela.</p>
+          <div class="hero-actions">
+            <a href="#produtos" class="btn btn-primary">Ver produtos</a>
+            <a href="#ofertas" class="btn btn-ghost">Ofertas do dia</a>
+          </div>
+          <dl class="hero-stats">
+            <div><dt>+12 mil</dt><dd>pedidos entregues</dd></div>
+            <div><dt>4.8/5</dt><dd>avaliação média</dd></div>
+            <div><dt>24h</dt><dd>suporte ao cliente</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-blob"></div>
+          <img class="hero-image" src="https://picsum.photos/seed/easyshopping-hero/640/640" alt="" width="480" height="480" loading="eager">
+          <div class="floating-card floating-card--price">
+            <span class="fc-label">Oferta relâmpago</span>
+            <span class="fc-value">-30%</span>
+          </div>
+          <div class="floating-card floating-card--cart">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L21.5 8H6" stroke="#2847AC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span>Adicionado ao carrinho</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CATEGORIES ===== -->
+    <section class="categories" id="categorias" aria-label="Categorias">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>Explore por categoria</h2>
+          <p>Encontre exatamente o que você precisa mais rápido.</p>
+        </div>
+        <div class="category-grid" id="categoryGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== PROMO BANNER ===== -->
+    <section class="promo" id="ofertas">
+      <div class="section-inner promo-inner">
+        <div class="promo-copy">
+          <span class="promo-tag">Oferta por tempo limitado</span>
+          <h2>Até 30% de desconto em eletrônicos selecionados</h2>
+          <p>Válido enquanto durar o estoque. Sem cupom necessário — o desconto já aparece no carrinho.</p>
+          <a href="#produtos" class="btn btn-primary">Aproveitar oferta</a>
+        </div>
+        <img class="promo-image" src="https://img.magnific.com/vetores-gratis/fundo-de-promocao-com-ate-30-de-desconto-e-efeito-de-luz_1017-63407.jpg?semt=ais_hybrid&w=740&q=80" alt="" loading="lazy">
+      </div>
+    </section>
+
+    <!-- ===== PRODUCTS ===== -->
+    <section class="products" id="produtos">
+      <div class="section-inner">
+        <div class="section-heading">
+          <h2>Produtos em destaque</h2>
+          <p>Selecionados pela nossa equipe pela qualidade e custo-benefício.</p>
+        </div>
+
+        <div class="products-toolbar">
+          <div class="chip-group" id="categoryChips" role="group" aria-label="Filtrar por categoria">
+            <button class="chip is-active" data-category="all" type="button">Todos</button>
+          </div>
+
+          <label class="sort-select">
+            <span class="visually-hidden">Ordenar produtos</span>
+            <select id="sortSelect">
+              <option value="relevance">Mais relevantes</option>
+              <option value="price-asc">Menor preço</option>
+              <option value="price-desc">Maior preço</option>
+              <option value="discount">Maior desconto</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="results-count" id="resultsCount" aria-live="polite"></p>
+
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.6"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          <h3>Nenhum produto encontrado</h3>
+          <p>Tente outra busca ou remova os filtros aplicados.</p>
+          <button class="btn btn-ghost" id="clearFiltersBtn" type="button">Limpar filtros</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BENEFITS ===== -->
+    <section class="benefits" id="beneficios">
+      <div class="section-inner benefits-grid">
+        <div class="benefit">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M2 8h13v9H2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M15 11h4l3 3.5V17h-7z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="6.5" cy="19" r="1.8" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="19" r="1.8" stroke="currentColor" stroke-width="1.6"/></svg>
+          <h3>Frete rápido</h3>
+          <p>Entrega expressa para todo o Brasil com rastreio em tempo real.</p>
+        </div>
+        <div class="benefit">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Pagamento seguro</h3>
+          <p>Ambiente protegido com criptografia em todas as etapas da compra.</p>
+        </div>
+        <div class="benefit">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M18 4v4h-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 12a8 8 0 0 1-14 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M6 20v-4h4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Troca fácil</h3>
+          <p>Até 30 dias para trocar ou devolver, sem burocracia.</p>
+        </div>
+        <div class="benefit">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7v5l3.2 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Suporte 24/7</h3>
+          <p>Time pronto para te ajudar todos os dias, a qualquer hora.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== NEWSLETTER ===== -->
+    <section class="newsletter">
+      <div class="section-inner newsletter-inner">
+        <div>
+          <h2>Receba nossas ofertas em primeira mão</h2>
+          <p>Sem spam — só descontos e lançamentos, direto no seu e-mail.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <label for="newsletterEmail" class="visually-hidden">Seu e-mail</label>
+          <input type="email" id="newsletterEmail" placeholder="seu@email.com" required>
+          <button type="submit" class="btn btn-primary">Inscrever-se</button>
+        </form>
+        <p class="form-feedback" id="newsletterFeedback" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="section-inner footer-grid">
+      <div class="footer-brand">
+        <a href="#main-content" class="logo">
+          <svg width="28" height="28" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#2847AC"/><path d="M28 38h44l-4 30a6 6 0 0 1-6 5H38a6 6 0 0 1-6-5l-4-30z" stroke="white" stroke-width="6" stroke-linejoin="round"/><path d="M38 38v-6a12 12 0 0 1 24 0v6" stroke="white" stroke-width="6" stroke-linecap="round"/></svg>
+          <span>Easy<strong>Shopping</strong></span>
+        </a>
+        <p>Sua loja online de confiança, feita para compras simples e sem complicação.</p>
+      </div>
+
+      <nav aria-label="Institucional">
+        <h3>Institucional</h3>
+        <a href="#">Sobre nós</a>
+        <a href="#">Trabalhe conosco</a>
+        <a href="#">Política de privacidade</a>
+      </nav>
+
+      <nav aria-label="Ajuda">
+        <h3>Ajuda</h3>
+        <a href="#">Central de atendimento</a>
+        <a href="#">Trocas e devoluções</a>
+        <a href="#">Formas de pagamento</a>
+      </nav>
+
+      <nav aria-label="Redes sociais">
+        <h3>Siga a loja</h3>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+        <a href="#">Pinterest</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Easy Shopping. Projeto de portfólio — nenhuma compra real é processada.</p>
+    </div>
+  </footer>
+
+  <!-- ===== CART DRAWER ===== -->
+  <div class="drawer-overlay" id="drawerOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Seu carrinho</h2>
+      <button class="icon-btn" id="cartClose" aria-label="Fechar carrinho">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+
+    <div class="cart-body" id="cartBody">
+      <!-- filled by JS -->
+    </div>
+
+    <div class="cart-footer" id="cartFooter" hidden>
+      <div class="cart-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">R$ 0,00</span>
+      </div>
+      <div class="cart-row">
+        <span>Frete</span>
+        <span id="cartShipping">Grátis</span>
+      </div>
+      <div class="cart-row cart-row--total">
+        <span>Total</span>
+        <span id="cartTotal">R$ 0,00</span>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn" type="button">Finalizar compra</button>
+      <p class="cart-note">Ambiente de demonstração — nenhum pagamento é processado.</p>
+    </div>
+  </aside>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <script src="Script.js"></script>
 </body>
 </html>
